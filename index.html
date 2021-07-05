@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery UI - Effects</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+</head>
+  
+<body>
+  <header>
+		<h1>jQuery UI - Effects</h1>
+	</header>
+  <section>
+    <div id="deleteThis" class="firstClass"></div>
+    <button id="showEffect">Show Effect</button>
+  
+<!-- Format for effects:
+
+    $("selector").hide("effectName", {optionName: optionValue}, duration, callBackFunction);
+
+--> 
+  <!-- Explode effect using .hide() -->
+    <script>
+    /*$("#showEffect").click(function (){
+		$("#deleteThis").hide("explode", {pieces:16}, 2000, function(){
+			alert("BOOM!");
+		});
+	});
+    </script>
+    
+    <!-- Bounce effect -->
+    <script>
+	/*	$("#showEffect").click(function (){
+		$("#deleteThis").effect("bounce", {distance:100, times: 20}, 3000,);
+	});
+    </script>
+    
+    <!-- Scale effect using .toggle() -->
+    <script>
+    /*$("#showEffect").click(function(){
+		$("#deleteThis").toggle("scale");
+	});
+    </script>
+    
+  <!-- Bounce effect using easing -->
+    <script>
+/* $("#showEffect").click(function (){
+		$("#deleteThis").effect("bounce", {distance:100, times: 20, easing: "easeOutElastic"}, 3000,);
+	});
+    </script>
+    
+  <!-- Adding a class with a callback function -->
+    <script>
+  /* $("#showEffect").click(function(){
+		$("#deleteThis").toggleClass("secondClass", 500, function(){
+			alert("Done Animating!");
+		});
+	});
+    </script>
+    
+  <!-- Toggling classes -->
+    <script>
+   $("#showEffect").click(function(){
+		$("#deleteThis").toggleClass("secondClass", 500);
+	});
+    </script>
+    
+</section> 
+</body>
+</html>
